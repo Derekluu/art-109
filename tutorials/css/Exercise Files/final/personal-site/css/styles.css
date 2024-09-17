@@ -25,7 +25,7 @@ html, body {
     height: 100%;
 }
 body {
-    background: #f6f6f6; 
+    background: #242424; 
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
@@ -35,6 +35,7 @@ h1, h2, h3 {
     font-family: 'Caveat', cursive;
     font-weight: 400;
     margin: 0;
+    color: #c9c9c9;
 }
 h1 {
     font-size: 7rem;
@@ -46,13 +47,18 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
-
+p {
+    color: #c9c9c9;
+}
+ul {
+    color: #c9c9c9;
+}
 /* links */
 a {
-    color: #3c8453;
+    color: #c9c9c9;
 }
 a:hover {
-    color: #bcaa96;
+    color: #714aff;
     text-decoration: none;
 }
 footer a {
@@ -62,8 +68,8 @@ footer a:hover {
     color: #3c8453;
 }
 .btn {
-    background: #3c8453;
-    color: #f6f6f6;
+    background: #ffffff;
+    color: #242424;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -84,7 +90,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background: url(../images/023.png) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -93,7 +99,7 @@ footer a:hover {
     flex: 1 0 auto;
 }
 .content-bg {
-    background: rgb(255 255 255 / 0.9);
+    background: rgba(0, 0, 0, 0.452);
     padding: 30px;
 }
 @media screen and (max-width:650px){
@@ -109,7 +115,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
+    background: url(../images/023.png) center;
     background-size: cover;
     content: "";
     display: block;
@@ -215,7 +221,7 @@ footer a:hover {
 /* FOOTER
 ------------------------------------*/
 footer {
-    background: #222;
+    background: #0000005d;
     color: #d3d4d6;
 }
 .socials {
