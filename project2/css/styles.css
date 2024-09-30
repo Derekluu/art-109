@@ -1,0 +1,261 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.nogap {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.nogap img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.img-container {
+    position: relative; 
+    margin-bottom: 0; 
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(100px,100px);
+    color: rgb(255, 255, 255);
+    font-size: 2vw; 
+    font-family: Arial, sans-serif;
+    transition: opacity 4s ease; 
+    opacity: 0; 
+    max-width: 50%; 
+    cursor: pointer;
+}
+
+.overlay-text-1 {
+    top: 0px; 
+}
+
+.overlay-text-2 {
+    top: 350px; 
+    left: 300px;
+}
+
+.overlay-text-3 {
+    top: 350px; 
+    left: 0px;
+}
+
+.overlay-text-4 {
+    top: 350px; 
+    left: 60%;
+}
+
+.overlay-text-5 {
+    top: 350px; 
+    left: 0px;
+}
+
+.overlay-text-6 {
+    top: 350px; 
+    left: 60%;
+}
+.overlay-text-7 {
+    top: 1000px; 
+    left: 34%;
+}
+
+.overlay-text-8 {
+    top: 1200px; 
+    left: 40%;
+
+}
+.overlay-text-9 {
+    top: 1000px; 
+    left: 55%;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.overlay-img {
+    top: 0px;
+    left: 0px;
+    max-width: 50%; 
+    transform: translate(0px,0px);
+    transition: opacity 4s ease;
+    opacity: 1;
+}
+
+
+
+#hidden-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+    transition: opacity 4s ease;
+    display: none;
+}
+
+#hidden-image.visible {
+    display: block;           
+    opacity: 1;             
+}
+
+#hidden-image-2 {
+    position: absolute; 
+    
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+    transition: opacity 4s ease;
+    display: none;
+}
+
+#hidden-image-2.visible {
+    display: block;           
+    opacity: 1;             
+}
+#hidden-image-3 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+    transition: opacity 4s ease;
+    display: none;
+    transform: translate(100%,0);
+
+}
+
+#hidden-image-3.visible {
+    display: block;           
+    opacity: 1;             
+}
+#hidden-image-4 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+    transition: opacity 4s ease;
+    display: none;
+}
+
+#hidden-image-4.visible {
+    display: block;           
+    opacity: 1;             
+}
+
+#hidden-image-5 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 0;
+    transition: opacity 4s ease;
+    display: none;
+    transform: translate(100%,0);
+
+}
+
+#hidden-image-5.visible {
+    display: block;           
+    opacity: 1;             
+}
+.fade-in {
+    opacity: 1; 
+}
+.overlay-text.fade-out {
+    opacity: 0; 
+}
+
+
+/*bunker hatch stuff*/
+
+.overlay-img3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%; 
+    transform: translate(0px,0px);
+    transition: opacity 4s ease;
+    opacity: 1;
+}
+
+.overlay-img2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%; 
+    transform: translate(0px,0px);
+    transition: opacity 4s ease;
+    opacity: 1;
+}
+
+#hatchclosed {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+#hatchopen {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    opacity: 1;
+}
+#note {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 45%; 
+    opacity: 1;
+    transform: translate(50%,0%);
+    cursor: pointer;
+
+}
+.overlay-text-10 {
+    top: 43%; 
+    left: 37%;
+}
+
+/*Doorway*/
+
+label {
+    display: block; /* Make sure it's block or inline, so it takes space */
+    margin-bottom: 10px; /* Add some spacing */
+    font-size: 16px; /* Ensure it's large enough */
+    color: white; /* Set the text color */
+}
+
+.overlay-text-11 {
+    top: 43%; 
+    left: 37%;
+}
+
+#yearInput {
+    width: 140px; /* Set the width to make the input wider */
+    height: 10%; /* Set the height to make the input taller */
+    font-size: 50px; /* Increase the font size for better visibility */
+    padding: 10px; /* Add padding inside the input field */
+    border-radius: 5px; /* Optional: round the corners */
+    border: 1px solid #ccc; /* Optional: add a border */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
