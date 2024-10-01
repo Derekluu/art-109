@@ -253,7 +253,7 @@ label {
 #yearInput {
     width: 140px; 
     height: 10%; 
-    font-size: 50px; 
+    font-size: 18px;
     padding: 10px; 
     border-radius: 5px; 
     border: 1px solid #ccc; 
@@ -262,23 +262,24 @@ label {
 
 .overlay-input {
     position: absolute;
-    top: 50%; /
-    left: 75%; 
-    transform: translate(-50%, 400px); 
-    display: flex;
-    flex-direction: column;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, 400px);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px; /* Spacing between elements */
     align-items: center;
-    color: white; 
+    color: white;
+    height: 50px;
 }
-
 .overlay-input label {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 .overlay-input input {
-    width: 200px;
-    height: 40px;
+    width: 0;
+    height: 0;
     font-size: 18px;
     padding: 5px;
     border-radius: 5px;
