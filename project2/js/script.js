@@ -1,4 +1,4 @@
-//hatch code
+//hatch codess
 
 document.addEventListener("DOMContentLoaded", function() {
     const hatchClosed = document.getElementById("hatchclosed");
@@ -6,25 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const note = document.getElementById("note");
     const reviewText = document.querySelector(".overlay-text-10");
 
-    // Initially hide the review text
     reviewText.style.display = "none";
 
     note.addEventListener("click", function() {
-        // Hide the closed hatch and show the open hatch
         note.style.display = "none";
         hatchClosed.style.display = "block";
 
-        // Show the review text after the hatch is open
         reviewText.style.display = "block";
     });
 
-    // Add click event listener to hatchClosed image
     hatchClosed.addEventListener("click", function() {
-        // Hide the closed hatch and show the open hatch
         hatchClosed.style.display = "none";
         hatchOpen.style.display = "block";
 
-        // Show the review text after the hatch is open
         reviewText.style.display = "block";
     });
 });
@@ -32,34 +26,26 @@ document.addEventListener("DOMContentLoaded", function() {
 //rope code
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Select all elements with the class 'overlay-text'
     const overlayTexts = document.querySelectorAll('.overlay-text');
 
-    // Add a click event listener to each element
     overlayTexts.forEach(function(text) {
         text.addEventListener('click', function() {
-            // Add the 'fade-out' class to start the fading process
             text.classList.add('fade-out');
 
-            // Once the fade-out transition ends, remove the element
             text.addEventListener('transitionend', function() {
                 text.remove();
             });
         });
 
-        // Set up the Intersection Observer
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Add fade-in class when the text is in view
                     entry.target.classList.add('fade-in');
-                    // Stop observing once the text has faded in
                     observer.unobserve(entry.target);
                 }
             });
         });
 
-        // Start observing the overlay text
         observer.observe(text);
     });
 
@@ -109,24 +95,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//doorway code
+//doorway codes
 
-document.addEventListener("DOMContentLoaded", function() {
-    const yearInput = document.getElementById("yearInput");
+document.getElementById('yearInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        const inputCode = event.target.value;
+        const correctCode = '2004';
 
-    // Add event listener for the 'Enter' key
-    yearInput.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            event.preventDefault(); // Prevent form submission if inside a form
-            
-            // Check if the value entered is '2004'
-            if (yearInput.value === "2004") {
-                // Redirect to the next page (replace 'nextpage.html' with your actual page)
-                window.location.href = "index.html";
-            } else {
-                // Optionally, show an error message or feedback
-                alert("Incorrect year! Please enter '2004'.");
-            }
+        if (inputCode === correctCode) {
+            document.getElementById('doorClosed').style.display = 'none';
+            document.getElementById('doorOpen').style.display = 'block';
+
+            document.querySelector('.overlay-text-12').style.display = 'block';
+        } else {
+            alert('Incorrect code. Please try again.');
         }
-    });
+    }
 });

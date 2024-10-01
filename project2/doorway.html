@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Enter Year</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
-  </head>
-  <body>
-    <main class="nogap">
-        <label for="yearInput">Entercode:</label>
-        <input type="text" id="yearInput" placeholder="Press Enter">
-    </main>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project2</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>     
+    <body>
+      <main class="nogap">
+        <div class="img-container">
+          <img class="overlay-image" id="doorClosed" src="images/doorclosed.png" alt="Door Closed" loading="lazy" >
+          <img class="overlay-image" id="doorOpen" src="images/doorOpen.png" alt="Door Open" loading="lazy" style="display: none;" >
+          <div class="overlay-text overlay-text-12"><a href="birthday.html">Enter?</a></div>
+          <div class="overlay-input">
+              <label for="yearInput">Enter code:</label>
+              <input type="text" id="yearInput" placeholder="Press Enter">
+          </div>
+          </div>
+      </main>
+      <script src="js/script.js"></script>
+
   </body>
 </html>

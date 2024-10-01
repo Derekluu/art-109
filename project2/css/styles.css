@@ -239,10 +239,10 @@ a:hover {
 /*Doorway*/
 
 label {
-    display: block; /* Make sure it's block or inline, so it takes space */
-    margin-bottom: 10px; /* Add some spacing */
-    font-size: 16px; /* Ensure it's large enough */
-    color: white; /* Set the text color */
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 16px;
+    color: white; 
 }
 
 .overlay-text-11 {
@@ -251,11 +251,65 @@ label {
 }
 
 #yearInput {
-    width: 140px; /* Set the width to make the input wider */
-    height: 10%; /* Set the height to make the input taller */
-    font-size: 50px; /* Increase the font size for better visibility */
-    padding: 10px; /* Add padding inside the input field */
-    border-radius: 5px; /* Optional: round the corners */
-    border: 1px solid #ccc; /* Optional: add a border */
-    box-sizing: border-box; /* Ensure padding is included in the total width */
+    width: 140px; 
+    height: 10%; 
+    font-size: 50px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+.overlay-input {
+    position: absolute;
+    top: 50%; /
+    left: 75%; 
+    transform: translate(-50%, 400px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; 
+}
+
+.overlay-input label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.overlay-input input {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 100%; 
+    transform: translate(0px,0px);
+    transition: opacity 4s ease;
+    opacity: 1;
+    cursor: default;
+}
+
+.overlay-text-12 {
+    top: 50%; 
+    left: 47%;
+    transform: translate(50px,500px);
+    font-size: 50px;
+    display: none;
+
+}
+
+.overlay-text-13 {
+    top: 1%; 
+    left: 1%;
+    font-size: 40px;
+    color: rgb(31, 31, 31) ;
+    width: 600px;
+    height: 50px;
 }
